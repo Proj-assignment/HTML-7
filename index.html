@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        width: 70%;
+        max-width: 500px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .bold-text {
+        font-weight: bold;
+      }
+
+      .radio-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .radio-group input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      .checkbox-group {
+        margin-bottom: 10px;
+      }
+
+      .checkbox-group input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      .save-button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .save-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <span class="bold-text">Full Name:</span>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <span class="bold-text">Username:</span>
+      <input type="text" id="username" name="username" required />
+
+      <span class="bold-text">Password:</span>
+      <input type="password" id="password" name="password" required />
+
+      <span class="bold-text">Confirm Password:</span>
+      <input type="password" id="repassword" name="repassword" required />
+
+      <span class="bold-text">Address:</span>
+      <input type="text" id="address" name="address" required />
+
+      <span class="bold-text">Age:</span>
+      <input type="number" id="age" name="age" required />
+
+      <div class="radio-group">
+        <span class="bold-text">Gender:</span>
+        <input type="radio" id="male" name="gender" value="male" checked />
+        <span class="bold-text">Male</span>
+        <input type="radio" id="female" name="gender" value="female" />
+        <span class="bold-text">Female</span>
+      </div>
+
+      <button class="save-button" type="button">Save</button>
+    </form>
+  </body>
+</html>
